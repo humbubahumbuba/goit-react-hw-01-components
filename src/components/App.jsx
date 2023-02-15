@@ -5,6 +5,8 @@ import data from 'data-pack/data';
 // import { Friend } from './Friends/Friend';
 import { FriendList } from './Friends/FriendList';
 import friends from '../data-pack/friends'
+import { TransactionHistory } from './Transactions/TransactionHistory';
+import transactions from '../data-pack/transactions'
 
 export default function App() {
   return (
@@ -24,6 +26,7 @@ export default function App() {
          
           
           <FriendList friends={friends} />
+          <TransactionHistory items={transactions} />
     </div>
   );
 }
