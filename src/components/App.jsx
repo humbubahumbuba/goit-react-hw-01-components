@@ -1,12 +1,14 @@
 import User from 'data-pack/user';
-import { Profile } from './Profile/Profile';
-import Statistics from './Statistics/statistics';
+import friends from '../data-pack/friends'
+import transactions from '../data-pack/transactions'
 import data from 'data-pack/data';
+
+import { Profile } from './Profile/Profile';
+import { Statistics } from './Statistics/statistics';
 // import { Friend } from './Friends/Friend';
 import { FriendList } from './Friends/FriendList';
-import friends from '../data-pack/friends'
 import { TransactionHistory } from './Transactions/TransactionHistory';
-import transactions from '../data-pack/transactions'
+
 
 export default function App() {
   return (
