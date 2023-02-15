@@ -1,7 +1,10 @@
 import User from 'data-pack/user';
-import Profile from 'components/Profile';
-import Statistics from './statistics';
+import { Profile } from './Profile/Profile';
+import Statistics from './Statistics/statistics';
 import data from 'data-pack/data';
+// import { Friend } from './Friends/Friend';
+import { FriendList } from './Friends/FriendList';
+import friends from '../data-pack/friends'
 
 export default function App() {
   return (
@@ -18,7 +21,9 @@ export default function App() {
           />
           
       <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data} />
+         
+          
+          <FriendList friends={friends} />
     </div>
   );
 }
