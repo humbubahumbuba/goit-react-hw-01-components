@@ -1,18 +1,19 @@
-import User from 'data-pack/user';
-import friends from '../data-pack/friends'
-import transactions from '../data-pack/transactions'
-import data from 'data-pack/data';
+import User from '../../data-pack/user'
+import friends from '../../data-pack/friends'
+import transactions from '../../data-pack/transactions'
+import data from '../../data-pack/data';
 
-import { Profile } from './Profile/Profile';
-import { Statistics } from './Statistics/statistics';
+import { Profile } from '../Profile/Profile';
+import { Statistics } from '../Statistics/statistics';
 // import { Friend } from './Friends/Friend';
-import { FriendList } from './Friends/FriendList';
-import { TransactionHistory } from './Transactions/TransactionHistory';
+import { FriendList } from '../Friends/FriendList';
+import { TransactionHistory } from '../Transactions/TransactionHistory';
+import {Container} from './App.styled'
 
 
 export default function App() {
   return (
-    <div>
+    <Container>
       <Profile
         username={User.username}
         tag={User.tag}
@@ -29,6 +30,6 @@ export default function App() {
           
           <FriendList friends={friends} />
           <TransactionHistory items={transactions} />
-    </div>
+    </Container>
   );
 }
