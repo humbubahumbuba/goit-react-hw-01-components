@@ -4,7 +4,7 @@ import { StatSection,TitleText,StatList,StatItem,StatLabel,StatValue } from './S
  export const Statistics = ({ title, stats }) => {
   return (
     <StatSection>
-      <TitleText>{title}</TitleText>
+      {title && <TitleText>{title}</TitleText>}
       <StatList>
             {stats.map(stat => (<StatItem key={stat.id} >
                 <StatLabel>{stat.label}</StatLabel>
